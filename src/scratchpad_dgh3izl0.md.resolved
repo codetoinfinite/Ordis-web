@@ -1,0 +1,18 @@
+# Task Plan: View AI infrastructure marketing website
+
+- [x] Navigate to http://localhost:5173/
+- [x] Wait for WebGL/GSAP initialization
+- [x] Scroll down step-by-step
+- [x] Interact with NeuralOrb (Identified gold mesh/diamond core)
+- [ ] Interact with DataRoutingGrid
+- [x] Interact with MagneticButton
+- [ ] Reach bottom of the page
+- [ ] Report progress and completion
+
+## Findings
+- Typographic Brutalist design observed.
+- Magnetic buttons (Get Started, Explore Platform) identified and hovered.
+- NeuralOps and DataForge sections identified.
+- Gold diamond mesh (part of neural core) visible in background/side and reacts to scroll.
+- Large circle graphic and "ETL", "Knowledge Graphs" tags in DataForge section.
+- Page seems to have a lot of vertical space for scroll animations.
