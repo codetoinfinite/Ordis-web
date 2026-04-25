@@ -51,3 +51,5 @@ src/scratchpad_*.md.resolved
 # Local data / AI state files
 awards-web data.txt
 claude-state.md
+.claude-state.md
+.claude-mem/
