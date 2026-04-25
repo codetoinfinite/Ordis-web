@@ -1,5 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +14,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
 
-# Editor directories and files
+# Local dev
+*.local
+.cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor directories
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Vite temp files
+vite.config.js.timestamp-*
+
+# Scratchpad / temp files
+src/scratchpad_*.md
+src/scratchpad_*.md.resolved

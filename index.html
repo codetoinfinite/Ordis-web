@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ordis AI Labs</title>
+
+  <!-- Primary SEO -->
+  <title>Ordis AI Labs | Enterprise AI Orchestration &amp; Routing Platform</title>
+  <meta name="description" content="Ordis AI Labs delivers enterprise-grade AI orchestration, intelligent model routing, autonomous agents, and voice AI — all from one unified platform. Deploy in minutes." />
+  <meta name="keywords" content="AI orchestration, enterprise AI platform, AI routing, autonomous AI agents, LLM routing, AI SaaS, voice AI, AI automation, model routing, Ordis AI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Ordis AI Labs" />
+  <link rel="canonical" href="https://ordis.ai/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ordis.ai/" />
+  <meta property="og:site_name" content="Ordis AI Labs" />
+  <meta property="og:title" content="Ordis AI Labs | Enterprise AI Orchestration &amp; Routing Platform" />
+  <meta property="og:description" content="Ordis AI Labs delivers enterprise-grade AI orchestration, intelligent model routing, autonomous agents, and voice AI — all from one unified platform." />
+  <meta property="og:image" content="https://ordis.ai/logos/logo-mark-white.png" />
+  <meta property="og:image:alt" content="Ordis AI Labs logo" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ordisai" />
+  <meta name="twitter:title" content="Ordis AI Labs | Enterprise AI Orchestration &amp; Routing Platform" />
+  <meta name="twitter:description" content="Ordis AI Labs delivers enterprise-grade AI orchestration, intelligent model routing, autonomous agents, and voice AI — all from one unified platform." />
+  <meta name="twitter:image" content="https://ordis.ai/logos/logo-mark-white.png" />
+
   <meta name="theme-color" content="#000000" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/logos/logo-mark-white.png" />
 </head>
 <body class="strix-theme">
   <!-- Strix style top ambient glow -->
@@ -46,35 +74,59 @@
           Enterprise-grade AI solutions and SaaS platform that transforms how businesses operate, automate, and scale. Deploy autonomous intelligence across your infrastructure.
         </p>
         
-        <div class="strix-hero-actions">
-          <div class="strix-input-group">
-            <input type="email" placeholder="name@company.com" class="strix-input" />
-            <button class="strix-btn strix-btn-primary strix-btn-inner">Start for free</button>
+        <!-- Hero — Interactive Alphe Router Demo -->
+        <div class="hero-demo">
+          <div class="demo-pills">
+            <button class="demo-pill active" data-key="finance">◆ Finance</button>
+            <button class="demo-pill" data-key="code">◆ Code</button>
+            <button class="demo-pill" data-key="fast">⚡ Fast task</button>
+            <button class="demo-pill" data-key="vision">◻ Vision</button>
           </div>
-          <button class="strix-btn strix-btn-secondary">Book a demo</button>
+          <div class="demo-card">
+            <div class="demo-user-row">
+              <span class="demo-role">USER</span>
+              <p class="demo-query-text" id="demo-query-text"></p>
+            </div>
+            <div class="demo-system-row" id="demo-system-row">
+              <span class="demo-role">ALPHE</span>
+              <p>Classified: <span class="demo-accent" id="demo-tag"></span> — routing to <span class="demo-model-name" id="demo-model"></span></p>
+            </div>
+            <div class="demo-footer" id="demo-footer">
+              <span class="demo-stat">⚡ <span class="demo-stat-val" id="demo-lat"></span> latency</span>
+              <span class="demo-stat">💰 <span class="demo-stat-val" id="demo-save"></span> saved</span>
+              <span class="demo-live-badge">● LIVE</span>
+            </div>
+            <div class="demo-progress-bar"><div class="demo-progress-fill" id="demo-progress-fill"></div></div>
+          </div>
+          <div class="demo-cta">
+            <a href="#" class="strix-btn strix-btn-primary">Start for free</a>
+            <a href="#" class="strix-btn strix-btn-secondary">See the platform</a>
+          </div>
         </div>
       </div>
       
-      <!-- Dashboard Mockup (Strix style image) -->
+      <!-- Dashboard Mockup (Strix style image) - Commented out for now
       <div class="strix-dashboard-wrapper">
-        <div class="strix-dashboard-mockup">
+        <div class="strix-dashboard-mockup strix-terminal">
           <div class="strix-dashboard-header">
             <div class="strix-dots">
               <span></span><span></span><span></span>
             </div>
+            <div class="strix-term-title">bash — ordis-router</div>
           </div>
-          <div class="strix-dashboard-body">
-            <div class="strix-mock-line"></div>
-            <div class="strix-mock-line short"></div>
-            <div class="strix-mock-grid">
-              <div class="strix-mock-card"></div>
-              <div class="strix-mock-card"></div>
-              <div class="strix-mock-card"></div>
+          <div class="strix-terminal-body">
+            <div class="strix-term-line"><span class="strix-prompt">~</span> ordis route --query "Analyze Q3 financial reports" --optimize latency</div>
+            <div class="strix-term-output">
+              <div class="strix-typing">Analyzing query... [Finance, Complex]</div>
+              <div class="strix-typing delay-1">Evaluating available models...</div>
+              <div class="strix-typing delay-2">[Match] Selected GPT-4o (Latency: 0.8s, Cost: $0.03/1k)</div>
+              <div class="strix-typing delay-3 success">✓ Task executed successfully in 1.1s</div>
             </div>
           </div>
         </div>
         <div class="strix-dashboard-glow"></div>
       </div>
+      -->
     </section>
 
     <!-- Trusted By Marquee -->
@@ -106,55 +158,376 @@
       </div>
     </section>
 
-    <!-- Features Bento Grid -->
-    <section class="strix-features">
+    <!-- ─── BENTO GRID IMPORT ─── -->
+    <section class="bento-section" style="padding-top: 4rem;">
+      <!-- decorative logo canvas — covers full section -->
+      <div class="logo-canvas" aria-hidden="true">
+        <img src="/logos/openai.svg"           style="--lx:3%;   --ly:6%;  --ls:52px; --lr:-12deg;">
+        <img src="/logos/anthropic.svg"        style="--lx:91%;  --ly:4%;  --ls:40px; --lr:8deg;">
+        <img src="/logos/gemini-color.svg"     style="--lx:16%;  --ly:55%; --ls:60px; --lr:15deg;">
+        <img src="/logos/meta-color.svg"       style="--lx:79%;  --ly:60%; --ls:46px; --lr:-20deg;">
+        <img src="/logos/mistral-color.svg"    style="--lx:54%;  --ly:3%;  --ls:34px; --lr:6deg;">
+        <img src="/logos/runway.svg"           style="--lx:71%;  --ly:30%; --ls:54px; --lr:-8deg;">
+        <img src="/logos/kling-color.svg"      style="--lx:7%;   --ly:38%; --ls:38px; --lr:18deg;">
+        <img src="/logos/github.svg"           style="--lx:37%;  --ly:78%; --ls:48px; --lr:-5deg;">
+        <img src="/logos/notion.svg"           style="--lx:87%;  --ly:82%; --ls:32px; --lr:12deg;">
+        <img src="/logos/slack.svg"            style="--lx:27%;  --ly:7%;  --ls:36px; --lr:-15deg;">
+        <img src="/logos/aws.svg"              style="--lx:61%;  --ly:70%; --ls:56px; --lr:10deg;">
+        <img src="/logos/cohere-color.svg"     style="--lx:45%;  --ly:18%; --ls:30px; --lr:-6deg;">
+        <img src="/logos/stripe.svg"           style="--lx:5%;   --ly:78%; --ls:50px; --lr:20deg;">
+        <img src="/logos/postgresql.svg"       style="--lx:81%;  --ly:20%; --ls:42px; --lr:-14deg;">
+        <img src="/logos/redis.svg"            style="--lx:49%;  --ly:88%; --ls:34px; --lr:7deg;">
+        <img src="/logos/linear.svg"           style="--lx:21%;  --ly:28%; --ls:40px; --lr:-9deg;">
+        <img src="/logos/jira.svg"             style="--lx:69%;  --ly:8%;  --ls:50px; --lr:16deg;">
+        <img src="/logos/vercel.svg"           style="--lx:93%;  --ly:44%; --ls:36px; --lr:-18deg;">
+        <img src="/logos/cloudflare-color.svg" style="--lx:34%;  --ly:50%; --ls:44px; --lr:4deg;">
+        <img src="/logos/openai.svg"           style="--lx:57%;  --ly:40%; --ls:28px; --lr:-22deg;">
+        <img src="/logos/anthropic.svg"        style="--lx:1%;   --ly:60%; --ls:30px; --lr:10deg;">
+        <img src="/logos/mistral-color.svg"    style="--lx:85%;  --ly:48%; --ls:24px; --lr:-7deg;">
+        <img src="/logos/github.svg"           style="--lx:50%;  --ly:62%; --ls:22px; --lr:14deg;">
+        <img src="/logos/jira.svg"             style="--lx:12%;  --ly:90%; --ls:26px; --lr:-11deg;">
+        <img src="/logos/stripe.svg"           style="--lx:74%;  --ly:90%; --ls:30px; --lr:5deg;">
+        <img src="/logos/redis.svg"            style="--lx:40%;  --ly:2%;  --ls:22px; --lr:-18deg;">
+        <img src="/logos/notion.svg"           style="--lx:60%;  --ly:26%; --ls:26px; --lr:9deg;">
+        <img src="/logos/linear.svg"           style="--lx:96%;  --ly:68%; --ls:20px; --lr:-4deg;">
+        <img src="/logos/postgresql.svg"       style="--lx:25%;  --ly:52%; --ls:20px; --lr:22deg;">
+        <img src="/logos/aws.svg"              style="--lx:43%;  --ly:72%; --ls:24px; --lr:-16deg;">
+        <img src="/logos/kling-color.svg"      style="--lx:18%;  --ly:15%; --ls:22px; --lr:13deg;">
+        <img src="/logos/runway.svg"           style="--lx:3%;   --ly:22%; --ls:26px; --lr:-5deg;">
+        <img src="/logos/cohere-color.svg"     style="--lx:88%;  --ly:36%; --ls:20px; --lr:19deg;">
+        <img src="/logos/vercel.svg"           style="--lx:64%;  --ly:14%; --ls:24px; --lr:-10deg;">
+        <img src="/logos/cloudflare-color.svg" style="--lx:32%;  --ly:92%; --ls:28px; --lr:8deg;">
+      </div>
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;"> <!-- Alignment wrapper -->
+        <div class="strix-features-header" style="text-align: center; margin-bottom: 3rem;">
+          <h2 class="strix-section-title">One prompt. The right model. Every time.</h2>
+          <p class="strix-section-subtitle" style="margin: 0 auto;">Alphe analyses every query, scores available models, and routes to the optimal one — text, image, video, code, or math.</p>
+        </div>
+        <div class="bento" id="bento">
+          <svg class="bento-svg" viewBox="0 0 960 414" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <filter id="glow-f" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="1.5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path class="flow-path" d="M 185 88 C 240 88, 265 165, 340 175" filter="url(#glow-f)"/>
+            <path class="flow-path" d="M 185 328 C 240 328, 265 245, 340 238" filter="url(#glow-f)" style="animation-delay:-1.8s"/>
+            <path class="flow-path fp-out" d="M 618 148 C 672 148, 698 92, 754 92" filter="url(#glow-f)" style="animation-delay:-0.9s"/>
+            <path class="flow-path fp-out" d="M 618 265 C 672 265, 698 325, 754 325" filter="url(#glow-f)" style="animation-delay:-2.4s"/>
+          </svg>
+          <div class="bento-cell cell-mcp">
+            <p class="cell-eye">MCP Servers</p>
+            <p class="cell-title">20 live</p>
+            <div class="mcp-grid" id="mcp-grid">
+              <div class="mcp-tile on"><img src="/logos/anthropic.svg" alt="Anthropic"/></div>
+              <div class="mcp-tile on"><img src="/logos/openai.svg" alt="OpenAI"/></div>
+              <div class="mcp-tile on"><img src="/logos/cohere-color.svg" alt="Cohere"/></div>
+              <div class="mcp-tile"><img src="/logos/aws.svg" alt="AWS"/></div>
+              <div class="mcp-tile on"><img src="/logos/github.svg" alt="GitHub"/></div>
+              <div class="mcp-tile on"><img src="/logos/jira.svg" alt="Jira"/></div>
+              <div class="mcp-tile"><img src="/logos/slack.svg" alt="Slack"/></div>
+              <div class="mcp-tile on"><img src="/logos/postgresql.svg" alt="PostgreSQL"/></div>
+              <div class="mcp-tile on"><img src="/logos/redis.svg" alt="Redis"/></div>
+              <div class="mcp-tile"><img src="/logos/stripe.svg" alt="Stripe"/></div>
+              <div class="mcp-tile on"><img src="/logos/notion.svg" alt="Notion"/></div>
+              <div class="mcp-tile"><img src="/logos/linear.svg" alt="Linear"/></div>
+              <div class="mcp-tile on"><img src="/logos/docker.svg" alt="Docker"/></div>
+              <div class="mcp-tile"><img src="/logos/mongodb.svg" alt="MongoDB"/></div>
+              <div class="mcp-tile on"><img src="/logos/figma.svg" alt="Figma"/></div>
+              <div class="mcp-tile"><img src="/logos/hubspot.svg" alt="HubSpot"/></div>
+              <div class="mcp-tile on"><img src="/logos/discord.svg" alt="Discord"/></div>
+              <div class="mcp-tile"><img src="/logos/shopify.svg" alt="Shopify"/></div>
+              <div class="mcp-tile on"><img src="/logos/confluence.svg" alt="Confluence"/></div>
+              <div class="mcp-tile"><img src="/logos/trello.svg" alt="Trello"/></div>
+              <div class="mcp-tile on"><img src="/logos/datadog.svg" alt="Datadog"/></div>
+              <div class="mcp-tile"><img src="/logos/sentry.svg" alt="Sentry"/></div>
+              <div class="mcp-tile on"><img src="/logos/mysql.svg" alt="MySQL"/></div>
+              <div class="mcp-tile"><img src="/logos/elasticsearch.svg" alt="Elasticsearch"/></div>
+              <div class="mcp-tile on"><img src="/logos/gitlab.svg" alt="GitLab"/></div>
+              <div class="mcp-tile"><img src="/logos/zapier.svg" alt="Zapier"/></div>
+              <div class="mcp-tile on"><img src="/logos/snowflake.svg" alt="Snowflake"/></div>
+              <div class="mcp-tile"><img src="/logos/intercom.svg" alt="Intercom"/></div>
+            </div>
+          </div>
+          <div class="bento-cell cell-docs">
+            <p class="cell-eye">Internal Docs</p>
+            <p class="cell-title">1,248 indexed</p>
+            <div class="docs-lines">
+              <div class="docs-row">
+                <span class="docs-label">Engineering wiki</span>
+                <div class="docs-bar"><div class="docs-fill" style="width:87%"></div></div>
+                <span class="docs-pct">87%</span>
+              </div>
+              <div class="docs-row">
+                <span class="docs-label">API specs</span>
+                <div class="docs-bar"><div class="docs-fill" style="width:61%"></div></div>
+                <span class="docs-pct">61%</span>
+              </div>
+              <div class="docs-row">
+                <span class="docs-label">Runbooks</span>
+                <div class="docs-bar"><div class="docs-fill" style="width:44%"></div></div>
+                <span class="docs-pct">44%</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-cell cell-router">
+            <div class="router-head">
+              <p class="cell-eye">Alphe Router</p>
+              <span class="badge-live">● LIVE</span>
+            </div>
+            <div class="router-body">
+              <div class="chat-msg user-msg">
+                <span class="chat-role">USER</span>
+                <p>Summarise last quarter's earnings call and identify cost risks.</p>
+              </div>
+              <div class="chat-msg system-msg">
+                <span class="chat-role">ALPHE</span>
+                <p>Classified: <span class="accent-text">complex reasoning</span> — routing to GPT-4o</p>
+                <p class="mono-text">→ context: 18k tokens · est. $0.003</p>
+              </div>
+              <div class="chat-msg assistant-msg">
+                <span class="chat-role">GPT-4o</span>
+                <p>Q3 revenue +12% YoY. Key risks: GPU procurement (+34%), data egress (+18%), licence renewals (+9%)...</p>
+              </div>
+            </div>
+            <div class="router-footer">
+              <span class="router-stat"><span class="accent-text" data-counter="74">0</span>% avg savings</span>
+              <span class="router-stat">1.2M queries / day</span>
+            </div>
+          </div>
+          <div class="bento-cell cell-llm">
+            <p class="cell-eye">LLM Registry</p>
+            <p class="cell-title">10 models</p>
+            <div class="llm-list">
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/openai.svg" alt="OpenAI"/></span>GPT-5.5</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:99%"></div></div>
+                <span class="llm-score">99</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/anthropic.svg" alt="Anthropic"/></span>Opus 4.7</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:96%"></div></div>
+                <span class="llm-score">96</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/gemini-color.svg" alt="Google"/></span>Gemini 3.1 Pro</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:94%"></div></div>
+                <span class="llm-score">94</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge mbadge-invert"><img src="/logos/kimi-color.svg" alt="Kimi"/></span>Kimi K2.6</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:91%"></div></div>
+                <span class="llm-score">91</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/xai.svg" alt="xAI"/></span>Grok 4.3</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:89%"></div></div>
+                <span class="llm-score">89</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/deepseek-color.svg" alt="DeepSeek"/></span>DeepSeek V4</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:87%"></div></div>
+                <span class="llm-score">87</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/meta-color.svg" alt="Meta"/></span>Llama 4 Maverick</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:82%"></div></div>
+                <span class="llm-score">82</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/mistral-color.svg" alt="Mistral"/></span>Mistral Large 3</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:74%"></div></div>
+                <span class="llm-score">74</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/qwen-color.svg" alt="Qwen"/></span>Qwen 3</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:71%"></div></div>
+                <span class="llm-score">71</span>
+              </div>
+              <div class="llm-row">
+                <span class="llm-name"><span class="mbadge"><img src="/logos/cohere-color.svg" alt="Cohere"/></span>Command A</span>
+                <div class="llm-bar"><div class="llm-fill" style="width:67%"></div></div>
+                <span class="llm-score">67</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-cell cell-agents">
+            <p class="cell-eye">Agents</p>
+            <p class="cell-title">5 on deck</p>
+            <div class="agents-list">
+              <span class="agent-pill on">data-pipeline</span>
+              <span class="agent-pill on">voice-ingest</span>
+              <span class="agent-pill on">audit-log</span>
+              <span class="agent-pill">clip-sync</span>
+              <span class="agent-pill on">doc-index</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Features Bento Grid — hidden for now -->
+    <section class="strix-features" style="display:none">
       <div class="strix-features-header">
         <h2 class="strix-section-title">Autonomous AI Platform</h2>
         <p class="strix-section-subtitle">A unified suite of cognitive products designed to address complex enterprise challenges natively.</p>
       </div>
 
-      <div class="strix-bento">
-        <!-- Card 1 -->
-        <div class="strix-bento-card large">
-          <div class="strix-bento-content">
-            <h3>NeuralOps</h3>
-            <p>Autonomous operations powered by deep learning. Predict, prevent, and resolve infrastructure issues before they impact users.</p>
-          </div>
-          <div class="strix-bento-visual">
-            <div class="strix-visual-box glow-blue"></div>
-          </div>
+      <div class="strix-feature-showcase">
+        <div class="sfs-nav">
+          <button class="sfs-tab active" data-target="neural">
+            <div class="sfs-tab-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ordis-accent)" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+            </div>
+            <div class="sfs-tab-content">
+              <h4>Neural Orchestrator</h4>
+              <p>Dynamic routing & failover</p>
+            </div>
+          </button>
+          
+          <button class="sfs-tab" data-target="forge">
+            <div class="sfs-tab-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <div class="sfs-tab-content">
+              <h4>DataForge Pipeline</h4>
+              <p>Real-time ETL workflows</p>
+            </div>
+          </button>
+          
+          <button class="sfs-tab" data-target="vision">
+            <div class="sfs-tab-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <div class="sfs-tab-content">
+              <h4>Multimodal Vision</h4>
+              <p>Spatial intelligence & OCR</p>
+            </div>
+          </button>
         </div>
         
-        <!-- Card 2 -->
-        <div class="strix-bento-card small">
-          <div class="strix-bento-content">
-            <h3>DataForge</h3>
-            <p>Transform raw data into actionable intelligence with advanced ETL pipelines.</p>
+        <div class="sfs-display">
+          <!-- Neural Panel -->
+          <div class="sfs-panel active" id="panel-neural">
+            <div class="sfs-panel-header">
+              <span class="pp-eye">◆ Live Metric · Latency</span>
+              <span class="mkt-savings" style="color: var(--ordis-accent);">0.8ms AVG</span>
+            </div>
+            <div class="strix-visual-box glow-blue">
+              <div class="neural-chart">
+                <div class="nc-bar" style="--h: 30%;"></div>
+                <div class="nc-bar" style="--h: 50%;"></div>
+                <div class="nc-bar" style="--h: 40%;"></div>
+                <div class="nc-bar" style="--h: 80%;"></div>
+                <div class="nc-bar" style="--h: 60%;"></div>
+                <div class="nc-bar" style="--h: 90%;"></div>
+                <div class="nc-bar" style="--h: 40%;"></div>
+                <div class="nc-bar" style="--h: 70%;"></div>
+              </div>
+            </div>
           </div>
-          <div class="strix-bento-visual">
-             <div class="strix-visual-box glow-purple"></div>
+          
+          <!-- Forge Panel -->
+          <div class="sfs-panel" id="panel-forge">
+            <div class="sfs-panel-header">
+              <span class="pp-eye">◆ Data Flow · Ingest</span>
+              <span class="mkt-savings" style="color: #a855f7;">4.2 TB/s</span>
+            </div>
+            <div class="strix-visual-box glow-purple">
+              <div class="data-pipeline">
+                <div class="dp-node node-1"></div>
+                <div class="dp-line"></div>
+                <div class="dp-node node-2"></div>
+                <div class="dp-line"></div>
+                <div class="dp-node node-3"></div>
+                <div class="dp-packet"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Vision Panel -->
+          <div class="sfs-panel" id="panel-vision">
+            <div class="sfs-panel-header">
+              <span class="pp-eye">◆ Spatial Scan · Analysis</span>
+              <span class="mkt-savings" style="color: #14b8a6;">99.9% Acc</span>
+            </div>
+            <div class="strix-visual-box glow-teal">
+              <div class="vision-scanner">
+                <div class="vs-grid"></div>
+                <div class="vs-box"></div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Card 3 -->
-        <div class="strix-bento-card small">
-          <div class="strix-bento-content">
-            <h3>VisionAI</h3>
-            <p>Computer vision solutions for quality control and spatial intelligence.</p>
+    <!-- ─── VOICE SHOWCASE IMPORT ─── -->
+    <section class="strix-voice-showcase" style="padding: 6rem 0;">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;"> <!-- Alignment wrapper -->
+        <div class="showcase-row showcase-rev">
+          <div class="showcase-text">
+            <h2 class="strix-section-title" style="text-align: left;">Every voice model.<br>One interface.</h2>
+            <p class="strix-section-subtitle" style="text-align: left; margin: 1rem 0 2rem;">Clone a voice in 30 seconds, design one from scratch, or fine-tune on your call recordings — all on infrastructure you control.</p>
+            <ul class="strix-feature-list" style="margin-bottom: 2rem;">
+              <li>✔ TTS, STT, and real-time voice agents from a single API</li>
+              <li>✔ Voice cloning, custom timbre design, and emotion control</li>
+              <li>✔ Fine-tune on your data — no audio sent to third parties</li>
+            </ul>
+            <a href="#" class="strix-btn strix-btn-secondary">Discover Voice &rarr;</a>
           </div>
-          <div class="strix-bento-visual">
-             <div class="strix-visual-box glow-teal"></div>
-          </div>
-        </div>
-        
-        <!-- Card 4 -->
-        <div class="strix-bento-card large">
-          <div class="strix-bento-content">
-            <h3>SOC 2 Compliant</h3>
-            <p>Enterprise-grade security with end-to-end encryption and granular access controls. Your data never leaves your secure tenant.</p>
-          </div>
-          <div class="strix-bento-visual">
-             <div class="strix-visual-box glow-gray"></div>
+          <div class="showcase-visual">
+            <div class="product-panel card-glow">
+              <div class="pp-header">
+                <span class="pp-eye">◆ Ordis Voice · Studio</span>
+              </div>
+              <div class="voice-chips">
+                <div class="voice-chip voice-selected">Ada · warm · en-GB</div>
+                <div class="voice-chip">Kenji · neutral · ja-JP</div>
+                <div class="voice-chip">Support v4 · custom</div>
+                <div class="voice-chip voice-ghost">+ Clone from sample</div>
+              </div>
+              <div class="voice-wave" aria-hidden="true">
+                <div class="wave-bar" style="height:22%"></div>
+                <div class="wave-bar" style="height:48%"></div>
+                <div class="wave-bar" style="height:72%"></div>
+                <div class="wave-bar" style="height:55%"></div>
+                <div class="wave-bar" style="height:88%"></div>
+                <div class="wave-bar" style="height:62%"></div>
+                <div class="wave-bar" style="height:92%"></div>
+                <div class="wave-bar" style="height:40%"></div>
+                <div class="wave-bar" style="height:76%"></div>
+                <div class="wave-bar" style="height:58%"></div>
+                <div class="wave-bar" style="height:30%"></div>
+                <div class="wave-bar" style="height:68%"></div>
+                <div class="wave-bar" style="height:82%"></div>
+                <div class="wave-bar" style="height:46%"></div>
+                <div class="wave-bar" style="height:26%"></div>
+                <div class="wave-bar" style="height:64%"></div>
+                <div class="wave-bar" style="height:74%"></div>
+                <div class="wave-bar" style="height:52%"></div>
+                <div class="wave-bar" style="height:88%"></div>
+                <div class="wave-bar" style="height:36%"></div>
+                <div class="wave-bar" style="height:58%"></div>
+                <div class="wave-bar" style="height:78%"></div>
+                <div class="wave-bar" style="height:42%"></div>
+                <div class="wave-bar" style="height:62%"></div>
+                <div class="wave-bar" style="height:22%"></div>
+              </div>
+              <div class="voice-transcript">
+                <div class="vt-row vt-caller">
+                  <span class="vt-role">Caller</span>
+                  <span class="vt-text">"Can you transfer me to a human?"</span>
+                </div>
+                <div class="vt-row vt-agent">
+                  <span class="vt-role">Ada</span>
+                  <span class="vt-text">"Connecting now — I'll brief them on your case."</span>
+                </div>
+                <div class="vt-escalation">Escalation flagged · Human approval <span class="accent-text">✓</span></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -168,21 +541,21 @@
       </div>
       <div class="strix-split-layout">
         <div class="strix-split-text">
-          <div class="strix-step active">
+          <div class="strix-step" data-step="0">
             <div class="strix-step-number">1</div>
             <div class="strix-step-content">
               <h3>Connect Infrastructure</h3>
               <p>Grant read-only access to your AWS, GCP, or Azure environments. We automatically map your architecture.</p>
             </div>
           </div>
-          <div class="strix-step">
+          <div class="strix-step" data-step="1">
             <div class="strix-step-number">2</div>
             <div class="strix-step-content">
               <h3>Deploy Autonomous Agents</h3>
               <p>Ordis AI spins up specialized agents for data engineering, operations, and vision processing tasks.</p>
             </div>
           </div>
-          <div class="strix-step">
+          <div class="strix-step" data-step="2">
             <div class="strix-step-number">3</div>
             <div class="strix-step-content">
               <h3>Actionable Insights & PRs</h3>
@@ -196,14 +569,7 @@
               <span class="strix-dot red"></span><span class="strix-dot yellow"></span><span class="strix-dot green"></span>
               <div class="strix-terminal-title">agent-deploy.sh</div>
             </div>
-            <div class="strix-terminal-body">
-              <p><span class="strix-prompt">$</span> ordis connect --provider aws</p>
-              <p class="strix-output">✔ Authentication successful</p>
-              <p class="strix-output">✔ Mapping infrastructure components...</p>
-              <p><span class="strix-prompt">$</span> ordis deploy agent --type data-pipeline</p>
-              <p class="strix-output">Deploying DataForge agent to us-east-1...</p>
-              <p class="strix-output success">Agent active. 1.2M records processed/sec.</p>
-            </div>
+            <div class="strix-terminal-body" id="agent-terminal-body"></div>
           </div>
           <div class="strix-dashboard-glow"></div>
         </div>
@@ -232,28 +598,86 @@
     <section class="strix-deep-dive">
       <div class="strix-deep-row">
         <div class="strix-deep-text">
-          <h2>Continuous Validation</h2>
-          <p>Unlike point-in-time checks, Ordis AI continuously validates your infrastructure state against dynamic baselines. It learns from your deployment patterns to drastically reduce false positives.</p>
+          <p class="eyebrow" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; font-weight: 700;">◆ Human-in-the-loop</p>
+          <h2>No autonomous decisions. Ever.</h2>
+          <p>Every action with regulatory, financial, or customer impact pauses for a named human approver. Ordis logs the prompt, the model, the rationale, and the approver — so every decision is defensible.</p>
           <ul class="strix-feature-list">
-            <li>✔ Real-time anomaly detection</li>
-            <li>✔ Zero-day threat modeling</li>
-            <li>✔ Automated remediation paths</li>
+            <li>→ Approval queues per department, SLA, and risk tier</li>
+            <li>→ Cryptographic audit trail, exportable to your SIEM</li>
+            <li>→ Approver fatigue protection — auto-batches low-risk items</li>
           </ul>
+          <a href="#" class="strix-link-btn">Read the governance whitepaper &rarr;</a>
         </div>
         <div class="strix-deep-visual">
-          <div class="strix-mock-card-large"></div>
+          <div class="visual-card card-glow" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); position: relative; overflow: hidden;">
+            <div class="approval-header">
+              <span class="pp-eye" style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;">◆ Approval Queue</span>
+              <span class="queue-count">7 awaiting</span>
+            </div>
+            <div class="approval-list">
+              <div class="approval-item">
+                <div class="appr-query">Approve $48,200 refund to account #A-2281</div>
+                <div class="appr-meta">
+                  <span class="risk-pill risk-high">High risk</span>
+                  <div class="appr-btns">
+                    <button class="appr-yes">Approve</button>
+                    <button class="appr-no">Reject</button>
+                  </div>
+                </div>
+              </div>
+              <div class="approval-item">
+                <div class="appr-query">Send contract #2291 for e-signature to 3 parties</div>
+                <div class="appr-meta">
+                  <span class="risk-pill risk-med">Medium risk</span>
+                  <div class="appr-btns">
+                    <button class="appr-yes">Approve</button>
+                    <button class="appr-no">Reject</button>
+                  </div>
+                </div>
+              </div>
+              <div class="approval-item">
+                <div class="appr-query">Publish product update to 12,000 customers</div>
+                <div class="appr-meta">
+                  <span class="risk-pill risk-low">Low risk</span>
+                  <div class="appr-btns">
+                    <button class="appr-yes">Approve</button>
+                    <button class="appr-no">Reject</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="approval-footer">142 cleared this week · 0 auto-shipped</div>
+          </div>
           <div class="strix-dashboard-glow"></div>
         </div>
       </div>
       
       <div class="strix-deep-row reverse">
         <div class="strix-deep-text">
-          <h2>Developer-First Workflow</h2>
-          <p>We don't just alert you to problems; we provide the solutions. Ordis AI integrates directly into your CI/CD pipelines, creating branch fixes and PRs ready for review.</p>
-          <a href="#" class="strix-link-btn">Read the docs &rarr;</a>
+          <p class="eyebrow" style="color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; font-weight: 700;">◆ Vendor neutrality</p>
+          <h2>Never locked in. Never priced out.</h2>
+          <p>Every major lab, every leading open-source release, and your own fine-tunes sit behind one API. When a new model ships, Ordis routes to it the next day — no migration, no rewrite.</p>
+          <ul class="strix-feature-list">
+            <li>→ 200+ models across 18 providers, plus your private weights</li>
+            <li>→ Automatic failover when a provider degrades or raises prices</li>
+            <li>→ Per-workload cost and latency budgets, enforced at the router</li>
+          </ul>
+          <a href="#" class="strix-link-btn">See supported models &rarr;</a>
         </div>
         <div class="strix-deep-visual">
-          <div class="strix-mock-card-large split"></div>
+          <div class="visual-card card-glow" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); position: relative; overflow: hidden;">
+            <div class="model-mkt-header">
+              <span class="pp-eye" style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;">◆ Model Library</span>
+              <span class="mkt-savings accent-text" style="color: #3b82f6;">$312K saved / mo</span>
+            </div>
+            <div class="mkt-filters" id="mkt-filters">
+              <span class="mkt-filter mkt-filter-active" data-filter="text">Text</span>
+              <span class="mkt-filter" data-filter="vision">Vision</span>
+              <span class="mkt-filter" data-filter="video">Video</span>
+            </div>
+            <div class="mkt-grid" id="mkt-grid"></div>
+            <div class="mkt-footer">47 models active in routing pool</div>
+          </div>
           <div class="strix-dashboard-glow" style="background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%);"></div>
         </div>
       </div>
@@ -308,5 +732,43 @@
   </main>
 
   <script type="module" src="/src/main.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ordis AI Labs",
+    "url": "https://ordis.ai",
+    "logo": "https://ordis.ai/logos/logo-mark-white.png",
+    "description": "Enterprise-grade AI orchestration, intelligent model routing, autonomous agents, and voice AI — all from one unified platform.",
+    "foundingDate": "2024",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "ordisaitech@gmail.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ordis AI Platform",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Autonomous AI platform with intelligent model routing, enterprise agents, and voice AI for business automation.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Start for free"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Ordis AI Labs"
+    }
+  }
+  </script>
 </body>
 </html>

@@ -12,8 +12,8 @@ export default defineConfig({
     // Generate source maps for easier debugging in production (can be disabled if privacy is an issue)
     sourcemap: false,
 
-    // Minify output using esbuild (Vite's default and fastest)
-    minify: 'esbuild',
+    // Minify output using oxc (Vite 8 built-in, no separate install needed)
+    minify: 'oxc',
 
     // Ensure older browsers can parse the code if necessary
     target: 'es2020',
