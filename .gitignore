@@ -47,3 +47,7 @@ vite.config.js.timestamp-*
 # Scratchpad / temp files
 src/scratchpad_*.md
 src/scratchpad_*.md.resolved
+
+# Local data / AI state files
+awards-web data.txt
+claude-state.md
